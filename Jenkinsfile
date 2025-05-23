@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'github-creds', url: 'https://github.com/Suhailakp/nextjs-app.git', branch: 'main'
+                git branch: 'main', url: 'https://github.com/Suhailakp/nextjs-app.git'
             }
         }
 
