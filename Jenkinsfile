@@ -34,7 +34,7 @@ pipeline {
                 sh '''
                     echo "Deploying to $DEPLOY_DIR..."
                     rm -rf /home/nextjs-app/*
-                    cp -r .next public node_modules package.json next.config.js $DEPLOY_DIR/
+                    cp -r .next public node_modules package.json next.config.ts $DEPLOY_DIR/
                 '''
             }
         }
